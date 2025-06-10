@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@layer base {
+  @font-face {
+    font-family: "circular-web";
+    src: url("/fonts/circularweb-book.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "general";
+    src: url("/fonts/general.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "robert-regular";
+    src: url("/fonts/robert-regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "robert-medium";
+    src: url("/fonts/robert-medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "zentry";
+    src: url("/fonts/zentry.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+
+
+:root {
+    --color-blue-50: #DFDFF0;
+    --color-blue-75: #dfdff2;
+    --color-blue-100: #F0F2FA;
+    --color-blue-200: #010101;
+    --color-blue-300: #4FB7DD;
+    --color-violet-300: #5724ff;
+    --color-yellow-100: #8e983f;
+    --color-yellow-300: #edff66;
+}
+ 
+@layer utilities {
+  .font-circular {
+    font-family: "circular-web", sans-serif;
+  }
+  .font-general {
+    font-family: "general", sans-serif;
+  }
+  .font-robert-regular {
+    font-family: "robert-regular", sans-serif;
+  }
+  .font-robert-medium {
+    font-family: "robert-medium", sans-serif;
+  }
+  .font-zentry {
+    font-family: "zentry", sans-serif;
+  }
+}
+
+
+
+body {
+  font-family: "General Sans" sans-serif;
+  width: 100dvw;
+  background-color: #ec8422;
+  overflow-x: hidden;
+}
+
