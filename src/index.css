@@ -33,18 +33,24 @@
   }
 }
 
-
 :root {
-    --color-blue-50: #DFDFF0;
-    --color-blue-75: #dfdff2;
-    --color-blue-100: #F0F2FA;
-    --color-blue-200: #010101;
-    --color-blue-300: #4FB7DD;
-    --color-violet-300: #5724ff;
-    --color-yellow-100: #8e983f;
-    --color-yellow-300: #edff66;
+  --color-blue-50: #dfdff0;
+  --color-blue-75: #dfdff2;
+  --color-blue-100: #f0f2fa;
+  --color-blue-200: #010101;
+  --color-blue-300: #4fb7dd;
+  --color-violet-300: #5724ff;
+  --color-yellow-100: #8e983f;
+  --color-yellow-300: #edff66;
 }
- 
+
+body {
+  font-family: "General Sans" sans-serif;
+  width: 100dvw;
+  background-color: #dfdff0;
+  overflow-x: hidden;
+}
+
 @layer utilities {
   .font-circular {
     font-family: "circular-web", sans-serif;
@@ -61,14 +67,17 @@
   .font-zentry {
     font-family: "zentry", sans-serif;
   }
+  .mask-clip-path {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .absolute-center {
+    @apply absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%];
+  }
+  .special-font b {
+    font-family: "zentry";
+    font-feature-settings: "ss01" on;
+  }
+  .hero-heading {
+    @apply uppercase font-black text-5xl sm:right-10 sm:text-7xl md:text-9xl lg:text-[12rem];
+  }
 }
-
-
-
-body {
-  font-family: "General Sans" sans-serif;
-  width: 100dvw;
-  background-color: #ec8422;
-  overflow-x: hidden;
-}
-
